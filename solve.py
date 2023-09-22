@@ -1,7 +1,7 @@
 import gdb
 import string  
 alphabet = string.ascii_uppercase + string.ascii_lowercase +string.digits+"{_}"
-file_path = "/home/semloh/picoCTF/easy_GDB/input.txt"
+file_path = "/home/semloh/picoCTF/easy_GDB/input.txt" #thay đổi path file của bạn vào đây 
 flag = "picoCTF{"
 gdb.execute("b*0x565559a7")
 while ('}' not in flag):
